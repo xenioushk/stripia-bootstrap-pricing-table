@@ -1,0 +1,675 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+/**
+ * File: styles.css
+ * Description : Contains all necessary styling for the BWL Energy Pricing Table 
+ * Author: xenioushk
+ * Credits: http://www.bluewindlab.net
+ * Project: BWL Energy Pricing Table
+ **/
+/*========================================================================*/
+/*   TABLE OF CONTENT
+/*========================================================================*/
+/*
+/*     01. PRICING TABLE STYLES
+/*     02. RED THEME
+/*     03. BLUE THEME
+/*     04. GREEN THEME
+/*     05. ORANGE THEME
+/*     06. YELLOW THEME
+/*     07. PRICING TABLE HELPERS
+/*     08. PRICING TABLE COLUMNS
+/*     09. RESPONSIVE STYLING
+/*
+/*========================================================================*/
+@charset "utf-8";
+.clear {
+  clear: both;
+}
+/***********************************************************************************************/
+/*  01. PRICING TABLE STYLES */
+/***********************************************************************************************/
+.energy-pricing-table {
+  clear: both;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+.energy-pricing-table .planbg {
+  width: 23%;
+  height: auto;
+  min-height: 500px;
+  float: left;
+  margin-top: 25px;
+  margin-bottom: 24px;
+  margin-left: 1%;
+  margin-right: 1%;
+  -webkit-box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+.energy-pricing-table .planbg .plan_price_title {
+  height: 32px;
+  line-height: 32px;
+  padding: 5px 0;
+  width: 100%;
+  background: #353740;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.energy-pricing-table .planbg .planholder {
+  width: 100%;
+  background: #fff;
+  border-top: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.energy-pricing-table .planbg .ribbon {
+  width: 48px;
+  height: 100px;
+  margin: 0;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+}
+.energy-pricing-table .planbg .ribbon .inset {
+  width: 42px;
+  height: 55px;
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  z-index: 5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.energy-pricing-table .planbg .ribbon .ribbon-container {
+  position: relative;
+  width: 42px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-left: 1px solid #631a15;
+  border-right: 1px solid #631a15;
+  border-bottom: 1px solid #631a15;
+}
+.energy-pricing-table .planbg .ribbon .ribbon-base {
+  height: 100px;
+  width: 42px;
+  background: #a6000a;
+  position: relative;
+  z-index: 2;
+}
+.energy-pricing-table .planbg .ribbon .ribbon-base:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 34px;
+  left: 3px;
+  height: 96px;
+  border-left: 1px dashed #631a15;
+  border-right: 1px dashed #631a15;
+  border-bottom: 1px dashed #631a15;
+}
+.energy-pricing-table .planbg .ribbon .ribbon-base:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 34px;
+  left: 4px;
+  height: 96px;
+  border-left: 1px dashed #da5050;
+  border-right: 1px dashed #da5050;
+  border-bottom: 1px dashed #da5050;
+}
+.energy-pricing-table .planbg .ribbon .ribbon-text {
+  position: absolute;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  z-index: 10;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  height: 105px;
+  width: 80px;
+  line-height: 24px;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  -ms-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  -o-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.energy-pricing-table .planbg .iconbg {
+  width: 100%;
+  font-size: 58px;
+  color: #fff;
+  text-align: center;
+  padding: 42px 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.energy-pricing-table .planbg .iconbg:after {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: -290px;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
+}
+.energy-pricing-table .planbg .iconbg i {
+  color: #ffffff;
+  display: inline-block;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  z-index: 10;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+.energy-pricing-table .planbg .iconbg:hover i {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  color: #d9d9d9;
+}
+.energy-pricing-table .planbg .iconbg:hover:after {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 200%;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
+  z-index: 0;
+}
+.energy-pricing-table .planbg .packagetypebg {
+  width: 100%;
+  background: #353740;
+}
+.energy-pricing-table .planbg .package_amount_duration {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  height: 48px;
+  line-height: 48px;
+  display: block;
+  padding: 3px 0 3px 12px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 10;
+}
+.energy-pricing-table .planbg .package_amount_duration span.amount {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+.energy-pricing-table .planbg .package_amount_duration span.duration {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+.energy-pricing-table .planbg .package_amount_duration span.duration:before {
+  content: '/';
+  display: inline-block;
+  margin-right: 3px;
+  color: #ffffff;
+}
+.energy-pricing-table .planbg .package_amount_duration:after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  right: -165px;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
+}
+.energy-pricing-table .planbg .features {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  border-left: 0px solid #e5e5e5;
+  border-right: 0px solid #e5e5e5;
+}
+.energy-pricing-table .planbg .features li {
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  text-align: left;
+  background: #f00;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: bold;
+  color: #3b3b3b;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.energy-pricing-table .planbg .features li:hover {
+  background: rgba(195, 195, 195, 0.1);
+}
+.energy-pricing-table .planbg .selectpackage {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  border: 0;
+  margin-top: 0px;
+}
+.energy-pricing-table .planbg .selectpackage a {
+  text-decoration: none;
+  color: #ffffff;
+  background: #d0151c;
+  width: 50%;
+  height: 42px;
+  line-height: 42px;
+  padding: 0px;
+  text-transform: Uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 12px auto;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+.energy-pricing-table .planbg .selectpackage a:after {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: -25px;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
+}
+.energy-pricing-table .planbg .selectpackage a:hover,
+.energy-pricing-table .planbg .selectpackage a:focus {
+  background: #730c10;
+}
+.energy-pricing-table .planbg .selectpackage a:hover:after,
+.energy-pricing-table .planbg .selectpackage a:focus:after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 300px;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
+}
+.energy-pricing-table {
+  /***********************************************************************************************/
+  /* 02. RED THEME */
+  /***********************************************************************************************/
+  /***********************************************************************************************/
+  /* 03. BLUE THEME */
+  /***********************************************************************************************/
+  /***********************************************************************************************/
+  /* 04. GREEN THEME */
+  /***********************************************************************************************/
+  /***********************************************************************************************/
+  /* 05. ORANGE THEME */
+  /***********************************************************************************************/
+  /***********************************************************************************************/
+  /* 06. YELLOW THEME */
+  /***********************************************************************************************/
+}
+.energy-pricing-table .red_theme .plan_price_title {
+  border-top: 3px solid #d0151c;
+}
+.energy-pricing-table .red_theme .features li {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.energy-pricing-table .red_theme .features li:hover {
+  color: #d0151c;
+  border-color: #cccccc;
+}
+.energy-pricing-table .red_theme .iconbg {
+  background: #d0151c;
+  color: #ffffff;
+}
+.energy-pricing-table .red_theme .iconbg:hover {
+  background: #730c10;
+}
+.energy-pricing-table .red_theme .selectpackage a {
+  color: #ffffff;
+  background: #d0151c;
+}
+.energy-pricing-table .red_theme .selectpackage a:hover,
+.energy-pricing-table .red_theme .selectpackage a:focus {
+  background: #730c10;
+}
+.energy-pricing-table .red_theme .ribbon .ribbon-container {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.energy-pricing-table .red_theme .ribbon .ribbon-base {
+  background: #a21016;
+}
+.energy-pricing-table .red_theme .ribbon .ribbon-base:before {
+  border-left: 1px dashed #d0151c;
+  border-right: 1px dashed #d0151c;
+  border-bottom: 1px dashed #d0151c;
+}
+.energy-pricing-table .red_theme .ribbon .ribbon-text {
+  color: #ffffff;
+}
+.energy-pricing-table .blue_theme .plan_price_title {
+  border-top: 3px solid #0f64ba;
+}
+.energy-pricing-table .blue_theme .features li {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.energy-pricing-table .blue_theme .features li:hover {
+  color: #0f64ba;
+  border-color: #cccccc;
+}
+.energy-pricing-table .blue_theme .iconbg {
+  background: #0f64ba;
+  color: #ffffff;
+}
+.energy-pricing-table .blue_theme .iconbg:hover {
+  background: #07315c;
+}
+.energy-pricing-table .blue_theme .selectpackage a {
+  color: #ffffff;
+  background: #0f64ba;
+}
+.energy-pricing-table .blue_theme .selectpackage a:hover,
+.energy-pricing-table .blue_theme .selectpackage a:focus {
+  background: #07315c;
+}
+.energy-pricing-table .blue_theme .ribbon .ribbon-container {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.energy-pricing-table .blue_theme .ribbon .ribbon-base {
+  background: #0b4b8b;
+}
+.energy-pricing-table .blue_theme .ribbon .ribbon-base:before {
+  border-left: 1px dashed #0f64ba;
+  border-right: 1px dashed #0f64ba;
+  border-bottom: 1px dashed #0f64ba;
+}
+.energy-pricing-table .blue_theme .ribbon .ribbon-text {
+  color: #ffffff;
+}
+.energy-pricing-table .green_theme .plan_price_title {
+  border-top: 3px solid #4cb849;
+}
+.energy-pricing-table .green_theme .features li {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.energy-pricing-table .green_theme .features li:hover {
+  color: #4cb849;
+  border-color: #cccccc;
+}
+.energy-pricing-table .green_theme .iconbg {
+  background: #4cb849;
+  color: #ffffff;
+}
+.energy-pricing-table .green_theme .iconbg:hover {
+  background: #2d702b;
+}
+.energy-pricing-table .green_theme .selectpackage a {
+  color: #ffffff;
+  background: #4cb849;
+}
+.energy-pricing-table .green_theme .selectpackage a:hover,
+.energy-pricing-table .green_theme .selectpackage a:focus {
+  background: #2d702b;
+}
+.energy-pricing-table .green_theme .ribbon .ribbon-container {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.energy-pricing-table .green_theme .ribbon .ribbon-base {
+  background: #3c943a;
+}
+.energy-pricing-table .green_theme .ribbon .ribbon-base:before {
+  border-left: 1px dashed #4cb849;
+  border-right: 1px dashed #4cb849;
+  border-bottom: 1px dashed #4cb849;
+}
+.energy-pricing-table .green_theme .ribbon .ribbon-text {
+  color: #ffffff;
+}
+.energy-pricing-table .orange_theme .plan_price_title {
+  border-top: 3px solid #ff6815;
+}
+.energy-pricing-table .orange_theme .features li {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.energy-pricing-table .orange_theme .features li:hover {
+  color: #ff6815;
+  border-color: #cccccc;
+}
+.energy-pricing-table .orange_theme .iconbg {
+  background: #ff6815;
+  color: #ffffff;
+}
+.energy-pricing-table .orange_theme .iconbg:hover {
+  background: #ae3e00;
+}
+.energy-pricing-table .orange_theme .selectpackage a {
+  color: #ffffff;
+  background: #ff6815;
+}
+.energy-pricing-table .orange_theme .selectpackage a:hover,
+.energy-pricing-table .orange_theme .selectpackage a:focus {
+  background: #ae3e00;
+}
+.energy-pricing-table .orange_theme .ribbon .ribbon-container {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.energy-pricing-table .orange_theme .ribbon .ribbon-base {
+  background: #e15000;
+}
+.energy-pricing-table .orange_theme .ribbon .ribbon-base:before {
+  border-left: 1px dashed #ff6815;
+  border-right: 1px dashed #ff6815;
+  border-bottom: 1px dashed #ff6815;
+}
+.energy-pricing-table .orange_theme .ribbon .ribbon-text {
+  color: #ffffff;
+}
+.energy-pricing-table .yellow_theme .plan_price_title {
+  border-top: 3px solid #fcd102;
+}
+.energy-pricing-table .yellow_theme .features li {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.energy-pricing-table .yellow_theme .features li:hover {
+  color: #fcd102;
+  border-color: #cccccc;
+}
+.energy-pricing-table .yellow_theme .iconbg {
+  background: #fcd102;
+  color: #ffffff;
+}
+.energy-pricing-table .yellow_theme .iconbg:hover {
+  background: #977d01;
+}
+.energy-pricing-table .yellow_theme .selectpackage a {
+  color: #ffffff;
+  background: #fcd102;
+}
+.energy-pricing-table .yellow_theme .selectpackage a:hover,
+.energy-pricing-table .yellow_theme .selectpackage a:focus {
+  background: #977d01;
+}
+.energy-pricing-table .yellow_theme .ribbon .ribbon-container {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.energy-pricing-table .yellow_theme .ribbon .ribbon-base {
+  background: #c9a702;
+}
+.energy-pricing-table .yellow_theme .ribbon .ribbon-base:before {
+  border-left: 1px dashed #fcd102;
+  border-right: 1px dashed #fcd102;
+  border-bottom: 1px dashed #fcd102;
+}
+.energy-pricing-table .yellow_theme .ribbon .ribbon-text {
+  color: #ffffff;
+}
+/***********************************************************************************************/
+/* 07. PRICING TABLE HELPERS */
+/***********************************************************************************************/
+.bpt-align-left {
+  text-align: left;
+}
+.bpt-align-center {
+  text-align: center;
+}
+.bpt-align-right {
+  text-align: right;
+}
+/***********************************************************************************************/
+/* 08. PRICING TABLE COLUMNS */
+/***********************************************************************************************/
+.plan-col-1 .planbg {
+  width: 98%;
+}
+.plan-col-2 .planbg {
+  width: 48%;
+}
+.plan-col-3 .planbg {
+  width: 31%;
+}
+.plan-col-4 .planbg {
+  width: 23%;
+}
+.plan-col-5 .planbg {
+  width: 18%;
+}
+/***********************************************************************************************/
+/* 09. RESPONSIVE STYLING */
+/***********************************************************************************************/
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .energy-pricing-table .planbg {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .plan-col-1 .planbg,
+  .plan-col-2 .planbg,
+  .plan-col-3 .planbg,
+  .plan-col-4 .planbg {
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 1000px) {
+  .energy-pricing-table .planbg {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+}
